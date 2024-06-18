@@ -8,6 +8,6 @@ def get_todos(filepath=FilePath):
 
 
 # this function wont return anything,no value required from this function
-def write_todos(todos_arg, filepath=FilePath):
+def write(todos_arg, filepath=FilePath):
     with open(filepath, 'w') as file:
       file.writelines(todos_arg)
