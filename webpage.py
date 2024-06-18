@@ -2,7 +2,7 @@ import functions
 import streamlit as st
 import functions as ys
 
-todos = ys.get_todos(functions.FilePath)
+todos = ys.get_todos()
 
 
 def add_todo():
@@ -11,7 +11,7 @@ def add_todo():
     ys.write_todos(todos)
 
 
-todos = ys.get_todos(functions.FilePath)
+todos = ys.get_todos()
 
 st.title("My to-do App")
 st.subheader("This Is My Todo App")

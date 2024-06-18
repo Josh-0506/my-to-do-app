@@ -2,9 +2,9 @@ FilePath = r"C:\Users\joshu\OneDrive\Desktop\Web_app1\todos.txt"
 
 
 # filepath is the parameter
-def get_todos(FilePath):
-    with open(FilePath, 'r') as file:
-        todos_local = file.readlines()
+def get_todos(filepath=FilePath):
+    with open(filepath, 'r') as file_local:
+        todos_local = file_local.readlines()
 
     return todos_local
 
