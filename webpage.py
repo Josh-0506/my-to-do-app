@@ -2,7 +2,7 @@ import functions
 import streamlit as st
 import functions as ys
 
-todos = ys.get_todos()
+todos = ys.get()
 
 
 def add_todo():
