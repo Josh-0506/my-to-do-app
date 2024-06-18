@@ -11,8 +11,6 @@ def add_todo():
     ys.write_todos(todos)
 
 
-todos = ys.get_todos()
-
 st.title("My to-do App")
 st.subheader("This Is My Todo App")
 
