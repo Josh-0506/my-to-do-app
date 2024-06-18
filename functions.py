@@ -1,8 +1,8 @@
-FilePath = r"C:\Users\joshu\OneDrive\Desktop\Web_app1\todos.txt"
+FilePath = "todos.txt"
 
 
 # filepath is the parameter
-def get(filepath: object = FilePath):
+def get(filepath = FilePath):
     with open(filepath, 'r') as file_local:
         todos_local = file_local.readlines()
 
