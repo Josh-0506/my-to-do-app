@@ -7,19 +7,19 @@ todos = ys.get_todos()
 def add_todo():
     todo=st.session_state["new_todo"] + "\n"
     todos.append(todo)
-    ys.write(todos)
+    ys.write_todos(todos)
 
 
 todos = ys.get_todos()
 
 st.title("My to-do App")
-
+st.subheader("This Is My Todo App")
 
 for index,todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
     if checkbox:
         todos.pop(index)
-        functions.write(todos)
+        functions.write_todos(todos)
         del st.session_state[todo]
         st.rerun()
 
